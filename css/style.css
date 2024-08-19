@@ -681,6 +681,11 @@ body {
         align-items: center;
     }
 
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
 
 
 
@@ -729,5 +734,10 @@ body {
 
     .header__info {
         padding-top: 10px;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
 }
