@@ -585,6 +585,10 @@ body {
     width: 180px;
     height: 120px;
     border-radius: 20px;
+    -webkit-animation: imageslider 4s linear infinite;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
     animation: imageslider 4s linear infinite;
     animation-delay: 0s;
     animation-direction: normal;
