@@ -595,6 +595,7 @@ body {
     animation-fill-mode: none;
 }
 
+/* Полоса игр анимация */
 @-webkit-keyframes example {
     0% {
         -webkit-transform: translate(0%, 0);
@@ -632,6 +633,9 @@ body {
 }
 
 
+
+
+/* Мероприятия */
 .events {
     display: flex;
     flex-direction: column;
@@ -651,6 +655,11 @@ body {
 }
 
 
+
+
+
+
+/* Адаптив */
 @media screen and (width < 1220px) {
 
     .wrapper {
@@ -717,7 +726,6 @@ body {
 
 }
 
-
 @media screen and (width < 480px) {
 
     .btn {
@@ -767,3 +775,9 @@ body {
         gap: 100px;
     }
 }
+
+
+
+
+
+
