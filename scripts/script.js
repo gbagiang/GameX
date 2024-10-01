@@ -15,3 +15,28 @@ document.addEventListener("DOMContentLoaded", function () {
     nextOpen(wrapper, button);
   })
 });
+
+document.body.addEventListener('click', e => {
+  if (e.target.classList.contains('btn-open-popup')) {
+            togglePopup();
+  };
+})
+
+function togglePopup() {
+  const overlay = document.getElementById('popupOverlay');
+  overlay.classList.toggle('show');
+}
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
